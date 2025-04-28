@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #D8EFD3;
+}
+#h1{
+    font-size: larger;
+    color: white;
+}
+#uname{
+    font-size: large;
+}
+#passwd{
+    font-size: large;
+}
+#Forgot password{
+    font-size: large;
+}
+a {
+text-decoration: none;
+margin-left: 17em;
+font-size: 1.2em;
+color: #577B8D;
+}
+a:hover {
+    color: black;
+}
+#logo {
+  width: 4em;
+}
+#card {
+  padding: 1em;  
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 21em; 
+    margin-top: 5em; 
+}
+.btn {
+    background-color: #577B8D;
+    border-color: #577B8D;
+}
+.btn:hover {
+    background-color: #ddd;
+    color: black;
+}
