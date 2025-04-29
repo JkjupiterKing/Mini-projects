@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../resources/fonts/Rubik-Regular.ttf') format('truetype');
+}
+body {
+    background-color: white;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add custom CSS styles here */
+header {
+  font-family: "Rubik", sans-serif;
+  background-color:  #007fa2;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sidenav {
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  width: 0; /* Adjust width as needed */
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: #007fa2;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 1.2em;
+}
+
+.sidenav h5 {
+  color: black;
+  margin-left: 0.1em;
+  font-weight: bold;
+  display: block;
+}
+
+.sidenav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  transition: 0.3s;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Ensures no overflow */
+  text-overflow: ellipsis; /* Shows ellipsis if text overflows */
+}
+
+.sidenav a:hover {
+  background-color: #193366;
+}
+
+.sidenav a img {
+  width: 0.9em;
+  vertical-align: middle;
+  margin-bottom: 0.2em;
+  margin-right: 0.2em; /* Adds space between icon and text */
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+button.openbtn {
+  background-color: #007fa2; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+#logoutBtn{
+  background-color: #007fa2;
+}
+main {
+    background-color: white;
+    font-family: "Rubik", sans-serif;
+    padding: 1.5em;
+}
+img {
+  width: 1.2em;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  margin-left: 0;
+}
+section {
+    margin-bottom: 1.5em;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 8em;
+  justify-content: center;
+}
+.card {
+  width: 23em;
+}
+.card-title{
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.card-text {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.overview {
+    background-color: white;
+    padding: 0.7em;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+.metric {
+    text-align: center;
+}
+.actions {
+  background-color: white;
+}
+.actions button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #007fa2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: black;
+    color: white;
+}
+#refreshData {
+  border-radius: 6px;
+}
+#inventoryLevels {
+  font-size: 1em;
+}
+#inventoryCount {
+  margin-bottom: 1em;
+  font-size: 1em;
+}

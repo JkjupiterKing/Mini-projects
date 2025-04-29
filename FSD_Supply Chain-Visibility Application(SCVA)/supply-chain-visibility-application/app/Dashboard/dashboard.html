@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../resources/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="../../resources/Images/supply-chain-management.gif" type="image/x-icon">
+    <link rel="stylesheet" href="../../app/Dashboard/dashboard.css">
+</head>
+<body>
+    <header>
+        <button class="openbtn btn btn-secondary" onclick="openNav()">&#9776;</button>
+        <button id="logoutBtn" class="btn btn-secondary">
+            Logout <img src="../../resources/Images/logout.png" alt="icon" style="width: 1.1em;margin-bottom: 0.2em;">
+        </button>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+    </div>
+    <main>
+        <h1>Dashboard</h1>
+        <br>
+        <section class="overview">
+            <h2 style="margin-left: 0.5em;">Overview</h2>
+            <div class="container">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="card-img-top" src="../../resources/Images/total-orders.png"
+                                style="width: 7.8em;margin-left: 2em;" alt="Orders Processed Image">
+                            <h2 class="card-title">Total Orders</h2>
+                            <p class="card-text" id="Totalorders">0</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="card-img-top" src="../../resources/Images/shipment-status.png"
+                                style="width: 7.8em;" alt="Shipment Status Image">
+                            <h2 class="card-title" id="shipmentStatusTitle">Shipment Status</h2>
+                            <h5 class="card-title"><span id="shipmentCount" style="font-weight: bold;">0</span></h5>
+                        </div>
+                    </div>                    
+                </div>
+                <br>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="card-img-top" src="../../resources/Images/inventory-levels.png"
+                                style="width: 5em;margin-bottom: 0.8em;" alt="Inventory Levels Image">
+                            <h2 class="card-title">Inventory levels</h2>    
+                            <h2 class="card-title" id="inventoryLevels">Inventory Levels</h2>
+                            <h5 class="card-title"><span id="inventoryCount" style="font-weight: bold;">0</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="actions">
+            <h2>Actions</h2>
+            <button id="refreshData">Refresh Data</button>
+        </section>
+    </main>
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/Dashboard/dashboard.js"></script>
+</body>
+</html>
+

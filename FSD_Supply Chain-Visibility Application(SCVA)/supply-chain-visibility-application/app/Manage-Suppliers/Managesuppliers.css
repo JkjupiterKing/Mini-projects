@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../../resources/fonts/Rubik-Regular.ttf") format("truetype");
+}
+body {
+  background-color: white;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add custom CSS styles here */
+header {
+  font-family: "Rubik", sans-serif;
+  background-color: #007fa2;
+  padding: 1em;
+  display: block;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#logoutBtn {
+  background-color: #007fa2;
+  margin-left: 80em;
+}
+.supplier-management {
+  width: 70em;
+  margin: 2em auto;
+}
+#searchInput {
+  padding: 0.5em;
+  font-size: 0.875rem;
+  height: auto;
+  margin-right: 50em;
+}
+#manage-btn {
+  font-family: "Rubik", sans-serif;
+  background-color: #007fa2;
+  color: #fff;
+}
+
+.pagination {
+  justify-content: center; /* Centers the pagination items */
+  font-weight: bold; /* Makes the font bold */
+  margin-right: 5em;
+}
+
+.pagination li {
+  display: inline-block; /* Displays pagination items horizontally */
+  font-size: 1.2em; /* Adjusts the font size */
+}
+.pagination a {
+  color: black; /* Sets the text color */
+  text-decoration: none; /* Removes underline */
+  padding: 8px 12px; /* Adds padding inside the pagination items */
+  border: 1px solid #071952; /* Adds a border around pagination items */
+  border-radius: 1px; /* Rounds the corners */
+}
+
+.pagination a:hover {
+  background-color: grey; /* Changes background color on hover */
+  color: white; /* Changes text color on hover */
+}
+.pagination .active a {
+  background-color: grey; /* Changes background color for active item */
+  border-color: grey;
+  color: white; /* Changes text color for active item */
+}

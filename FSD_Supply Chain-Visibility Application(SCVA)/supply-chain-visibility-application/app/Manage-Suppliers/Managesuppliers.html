@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Suppliers</title>
+    <link
+      rel="stylesheet"
+      href="../../resources/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="../../resources/Images/supply-chain-management.gif"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="../../app/Manage-Suppliers/Managesuppliers.css"
+    />
+  </head>
+  <body>
+    <header>
+      <button id="logoutBtn" class="btn btn-secondary">
+        Logout
+        <img
+          src="../../resources/Images/logout.png"
+          alt="icon"
+          style="width: 1.1em; margin-bottom: 0.2em"
+        />
+      </button>
+    </header>
+    <div id="mySidenav" class="sidenav"></div>
+    <main>
+      <div class="container-fluid supplier-management">
+        <h2 id="title">Manage Orders</h2>
+        <br />
+        <div class="row"></div>
+        <br />
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Search for Orders"
+          />
+        </div>
+        <br />
+        <!-- Table for managing existing orders -->
+        <table id="ordersTable" class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+            <!-- orders will be dynamically inserted here -->
+          </tbody>
+        </table>
+        <ul id="pagination" class="pagination justify-content-center">
+          <!-- Pagination links will be dynamically inserted here -->
+        </ul>
+        <br />
+    </main>
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/Manage-Suppliers/Managesuppliers.js"></script>
+  </body>
+</html>

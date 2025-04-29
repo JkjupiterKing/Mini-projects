@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting and Visualization</title>
+    <link rel="stylesheet" href="../../app/Reporting-and-Visualization/Reporting-and-Visualization.css">
+    <link rel="stylesheet" href="../../resources/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="../../resources/Images/supply-chain-management.gif" type="image/x-icon">
+    <script src="../../resources/chart.js/dist/chart.umd.js"></script>
+</head>
+<body style="background-color: white;">
+  <header>
+    <button class="openbtn btn btn-secondary" onclick="openNav()">&#9776;</button>
+    <button id="logoutBtn" class="btn btn-secondary">
+        Logout <img src="../../resources/Images/logout.png" alt="icon" style="width: 1.1em;margin-bottom: 0.2em;">
+    </button>
+</header>
+<div id="mySidenav" class="sidenav">
+</div>
+<main>
+    <div class="container-fluid">
+        <br>
+        <h2 id="pagetitle" style="margin-left: 0.1em;">Reporting and Visualization</h2>
+        <br>
+        <!-- Parent container for charts -->
+        <div class="charts-container">
+            <!-- Container for Customer Orders and Purchase Orders in a row -->
+            <div class="row mb-4">
+                <!-- Customer Orders Chart -->
+                <div class="col-md-6">
+                    <div class="chart-container">
+                        <h3>Customer Orders</h3>
+                        <br>
+                        <canvas id="customerOrdersChart"></canvas>
+                        <br>
+                        <button type="button" class="btn download-button" id="export-customer-orders">Export Customer Orders</button>
+                    </div>
+                </div>
+
+                <!-- Purchase Orders Chart -->
+                <div class="col-md-6">
+                    <div class="chart-container">
+                        <h3>Purchase Orders</h3>
+                        <br>
+                        <canvas id="purchaseOrdersChart"></canvas>
+                        <br>
+                        <button type="button" class="btn download-button" id="export-purchase-orders">Export Purchase Orders</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container for Stocks chart in a full-width row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="chart-container">
+                        <h3>Stocks</h3>
+                        <br>
+                        <canvas id="stocksChart"></canvas>
+                        <br>
+                        <button type="button" class="btn download-button" id="export-stocks">Export Stocks</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+</main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../app/Reporting-and-Visualization/Reporting-and-Visualization.js"></script>
+</html>
+
+                

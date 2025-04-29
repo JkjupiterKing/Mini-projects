@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="/../resources/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Customerlogin.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/../../resources/image/online-shopping.png"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="header-buttons">
+      <a href="../login/login.html" class="btn btn-primary" target="_blank"
+        >Admin Login</a
+      >
+    </div>
+    <div class="container">
+      <div class="container-1" id="header">
+        <img src="/resources/image/online-shopping.png" alt="logo" id="logo" />
+        <h1>E-commerce app</h1>
+      </div>
+      <div class="card mx-auto" style="max-width: 30rem" id="card">
+        <div class="card-body">
+          <h1 class="card-title text-center">Login</h1>
+          <div id="form-container">
+            <div id="uname" class="mb-4">
+              <label for="username" class="form-label">Username:</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="form-control"
+                style="width: 100%"
+              />
+            </div>
+            <div id="passwd" class="mb-4">
+              <label for="password" class="form-label">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                style="width: 100%"
+              />
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary d-block mx-auto"
+              id="submit"
+            >
+              Login
+            </button>
+          </div>
+          <a
+            class="forgot-password-link"
+            data-toggle="modal"
+            data-target="#forgotPasswordModal"
+            id="forgot-link"
+            >Forgot Password?</a
+          >
+        </div>
+      </div>
+      <br>
+      <a href="../sign-up/sign-up.html" id="sign-up"
+        >Join thousands of happy users - sign up today!</a
+      >
+    </div>
+    <br />
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h5>
+                </div>
+                <div class="modal-body">
+                    <form id="forgotPasswordForm">
+                        <div class="form-group">
+                            <label for="forgotUsername">Enter your Username</label>
+                            <input type="text" class="form-control" id="Username" name="forgotUsername" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="newPassword">Enter your new password</label>
+                            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-dark btn-block" id="reset-btn">Reset Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+  </body>
+  <script src="../../app/Customerlogin/Customerlogin.js"></script>
+  <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>
