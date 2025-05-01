@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manage-competency - Adaptive Competency Development Suite</title>
+    <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../app/manage-competency/manage-competency.css" rel="stylesheet">
+    <link rel="icon" href="../../resources/Images/competence-logo.gif" type="image/x-icon">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidenav" id="mySidenav">
+    </div>
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="container mt-5">
+            <h2><b>
+                Manage Competency
+            </b></h2>
+            <div class="row">
+                <div class="container mt-5">
+                    <br>
+                    <div class="row" id="assessmentList">
+                        <!-- Assessment items will be injected here -->
+                    </div>
+                </div>
+    </div>
+    <!-- Modal HTML -->
+   <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resultsModalLabel">Assessment Results</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/manage-competency/manage-competency.js"></script>
+</body>
+</html>

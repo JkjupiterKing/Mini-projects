@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      href="../../resources/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../app/Admin-dashborad/AdminDashboard.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../../resources/Images/competence-logo.gif"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidenav" id="mySidenav"></div>
+    <!-- Main content -->
+    <div class="main-content">
+      <div class="container">
+        <h1 id="welcomeMessage" style="color: #330066">Welcome, Admin</h1>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Total Courses Published Section -->
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Total Courses Published</p>
+                <!-- List of courses Published-->
+                <ul class="list-group" id="TotalCoursesList"></ul>
+                <h3 id="TotalCoursesFound">0</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- Total registered users Section -->
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Total registered users</p>
+                <!-- List of registered users-->
+                <ul class="list-group" id="TotalUsersList"></ul>
+                <h3 id="TotalregisteredUserFound">0</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- Total courses enrolled Section -->
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Total courses enrolled by all users</p>
+                <!-- List of Total enrolled courses -->
+                <ul class="list-group" id="TotalenrolledCoursesList"></ul>
+                <h3 id="TotalenrolledCoursesFound">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Total Courses In-Progress by All Users -->
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Total Courses In-Progress by All Users</p>
+                <h3 class="card-text" id="totalCoursesInProgress">0</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- Total Courses Completed by All Users -->
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Total Courses Completed by All Users</p>
+                <h3 class="card-text" id="totalCoursesCompleted">0</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="results" class="container mt-4"></div>
+    </div>
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/Admin-dashborad/AdminDashboard.js"></script>
+  </body>
+</html>

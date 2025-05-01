@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../app/dashboard/dashboard.css" rel="stylesheet">
+    <link rel="icon" href="../../resources/Images/competence-logo.gif" type="image/x-icon">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidenav" id="mySidenav">
+    </div>
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="container">
+            <h1 id="welcomeMessage" style="color: #330066;">Welcome, User</h1>
+            <br>
+            <!-- Search Bar -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input id="courseSearchInput" type="text" class="form-control" placeholder="Search for courses...">
+                        <div class="input-group-append">
+                            <button id="searchButton" class="btn btn-primary" type="button" style="margin-left: 0.4em;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Ongoing Courses Section -->
+                    <div class="card" id="countcard">
+                        <div class="card-body">
+                            <h5 class="card-title">Ongoing Courses</h5>
+                            <!-- List of ongoing courses -->
+                            <ul class="list-group" id="ongoingCoursesList">
+                            </ul>
+                            <h3 id="ongoingCoursesNotFound" style="display: none;">No ongoing courses found.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Ongoing Courses Section -->
+                    <div class="card" id="countcard">
+                        <div class="card-body">
+                            <h5 class="card-title">Enrolled Courses</h5>
+                            <!-- List of ongoing courses -->
+                            <ul class="list-group" id="enrolledCoursesList">
+                            </ul>
+                            <h3 id="enrolledCoursesNotFound" style="display: none;">No enrolled  courses found.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Completed Courses Section -->
+                    <div class="card" id="countcard">
+                        <div class="card-body">
+                            <h5 class="card-title">Completed Courses</h5>
+                            <!-- List of completed courses -->
+                            <ul class="list-group" id="completedCoursesList">
+                            </ul>
+                            <h3 id="completedCoursesNotFound" style="display: none;">No completed courses found.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="searchResults"></div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/dashboard/dashboard.js"></script>
+</body>
+</html>

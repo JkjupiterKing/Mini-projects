@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <link
+      href="../../resources/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../app/employee-management/employee-management.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../../resources/Images/competence-logo.gif"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidenav" id="mySidenav"></div>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- Heading -->
+      <div class="container mt-5">
+        <h2>Employee Management</h2>
+
+        <!-- Add New Employee Button -->
+        <button
+          class="btn btn-primary float-end mb-3"
+          data-bs-toggle="modal"
+          data-bs-target="#addEmployeeModal"
+          id="add-btn"
+        >
+          Add New Employee
+        </button>
+
+        <!-- Employee Table -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Department</th>
+              <th>Position</th>
+              <th>Hire Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTableBody">
+            <!-- Employee rows will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Add Employee Modal -->
+    <div
+      class="modal fade"
+      id="addEmployeeModal"
+      tabindex="-1"
+      aria-labelledby="addEmployeeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addEmployeeModalLabel">
+              Add New Employee
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="addEmployeeForm">
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="department" class="form-label">Department</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="department"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="position" class="form-label">Position</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="position"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="hireDate" class="form-label">Hire Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="hireDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="birthDate" class="form-label">Birth Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="birthDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" required />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="addEmployeeButton"
+              >
+                Add Employee
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Update Employee Modal -->
+    <div
+      class="modal fade"
+      id="updateEmployeeModal"
+      tabindex="-1"
+      aria-labelledby="updateEmployeeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updateEmployeeModalLabel">
+              Update Employee
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="updateEmployeeForm">
+              <div class="mb-3">
+                <label for="updateFirstName" class="form-label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateFirstName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateLastName" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateLastName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="updateEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateDepartment" class="form-label"
+                  >Department</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateDepartment"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updatePosition" class="form-label">Position</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updatePosition"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateHireDate" class="form-label">Hire Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="updateHireDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateBirthDate" class="form-label"
+                  >Birth Date</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="updateBirthDate"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateAddress"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updatePassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="updatePassword"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="updateEmployeeButton"
+              >
+                Update Employee
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/employee-management/employee-management.js"></script>
+  </body>
+</html>

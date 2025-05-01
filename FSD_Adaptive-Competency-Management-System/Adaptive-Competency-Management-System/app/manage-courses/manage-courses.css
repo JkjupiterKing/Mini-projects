@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../resources/fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    padding-top: 1em; /* Adjust based on navbar height */
+    font-family: "PT Sans", sans-serif;
+}
+
+.main-content {
+    margin-left: 270px; 
+    padding: 20px;
+}
+h2{
+    margin-left: 0.2em;
+}
+.manage-courses-item{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/* CSS styles for dynamically created cards */
+.card {
+    width: 18rem; /* Set the width of the card */
+    margin-bottom: 1em; /* Margin between cards */
+    margin-right: 1em;
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    border-top-left-radius: 8px; /* Match border radius for rounded corners */
+    border-top-right-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 10em;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+.card-body {
+    flex: 1; /* Allow card body to grow to fill remaining space */
+    padding: 1rem; /* Padding inside the card body */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Card title font size */
+    font-weight: bold; /* Card title font weight */
+    margin-bottom: 0.5rem; /* Margin below card title */
+}
+
+.card-text {
+    font-size: 1rem; /* Card text font size */
+    line-height: 1.4; /* Line height for readability */
+    margin-bottom: 1rem; /* Margin below card text */
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: #330066; /* Primary button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove button border */
+    padding: 0.5rem 1rem; /* Padding inside the button */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-right: 0.3em;
+    font-size: 0.7em;
+}
+
+.btn-primary:hover {
+    background-color:white; 
+    color: grey;/* Darker background color on hover */
+}
+/* CSS for the disabled button */
+.btn-primary[disabled] {
+    background-color:white; 
+    border-color: white; 
+    cursor: not-allowed; 
+}
+
+#coursesList{
+    margin-left: 0.2em;
+}

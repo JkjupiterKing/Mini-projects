@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="../../resources/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../app/Login/login.css" />
+    <link
+      rel="icon"
+      href="../../resources/Images/competence-logo.gif"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="login-form">
+      <h2 class="mb-4">Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <div class="mt-3 text-center">
+        <a
+          href="../../app/Admin-login/AdminLogin.html"
+          class="btn btn-primary"
+          target="_blank"
+          id="login-btn"
+          >Admin Login</a
+        >
+      </div>
+    </div>
+    <br />
+    <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../app/Login/login.js"></script>
+  </body>
+</html>

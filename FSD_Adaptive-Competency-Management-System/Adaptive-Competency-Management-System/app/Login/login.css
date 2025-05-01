@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../../resources/fonts/PTSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    background-image: url('../../resources/Images/Background\ \(2\).jpg'); /* Replace 'login-background.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+  }
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency */
+    padding: 30px;
+    border-radius: 10px;
+    width: 20em;
+    max-width: 80%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  .login-form h2 {
+    color: #240750; /* Change heading text color */
+    font-weight: bold;
+    text-align: center;
+  }
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    border: 1px solid #ccc; /* Optional: Customize input field border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .login-form button[type="submit"] {
+    background-color: #240750; 
+    border: 1px solid #240750;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .login-form button[type="submit"]:hover {
+    background-color: #1a0433; /* Darker hover color */
+    border-color: #1a0433;
+  }
+  #login-btn {
+    background-color: #240750; 
+    border: 1px solid #240750;
+    border-radius: 5px;
+    color: white;
+    padding: 0.4em;
+    font-size: 16px;
+  }
+  #login-btn:hover {
+    color: gray;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }

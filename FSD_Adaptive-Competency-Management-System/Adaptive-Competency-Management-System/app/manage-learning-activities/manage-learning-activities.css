@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../resources/fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    padding-top: 1em; 
+    font-family: "PT Sans", sans-serif;
+}
+
+.main-content {
+    margin-left: 270px; 
+    padding: 20px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 80%;
+}

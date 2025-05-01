@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../resources/fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+}
+#timer {
+    color: black;
+    font-size: 2rem; 
+    font-weight: bold;
+    font-size: 2em;
+}
+.my-4 {
+    color: black;
+}
+.question-container {
+    margin: 20px 0;
+}
+.question-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.radio-label {
+    margin-left: 10px;
+}
+.submit-button {
+    background-color: black;
+    border-color: black;
+    margin-bottom: 1em;
+    margin-left: 26em;
+    color: white; /* Ensure text is readable on black background */
+}
+
+/* Optional: Center the button within the form if it spans full width */
+#questionsForm .submit-button {
+    align-self: center; /* Center button if it doesn’t span full width */
+}
+.submit-button:hover {
+    background-color: black;
+    color: grey;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: #F6F5F2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* Form check styles */
+.form-check {
+    margin-bottom: 10px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+}
+/* Hide the default radio button appearance */
+.form-check-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button appearance */
+.form-check-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+/* Custom radio button */
+.form-check-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: white; /* Background for the unselected state */
+    border: 1px solid black; /* Border color for the unselected state */
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition for color change */
+}
+
+/* Style for the checked state */
+.form-check-input:checked + .form-check-label::before {
+    background: black; /* Background color for the selected state */
+    border-color: black; /* Border color for the selected state */
+}
+
+/* Inner circle for the checked state */
+.form-check-input:checked + .form-check-label::after {
+    content: "";
+    position: absolute;
+    left: 5px; /* Adjust to center the inner circle */
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: white; /* Color of the inner circle */
+    border-radius: 50%;
+    transform: translateY(-50%);
+}

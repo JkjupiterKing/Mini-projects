@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../../resources/fonts/PTSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  padding-top: 1em;
+  font-family: "PT Sans", sans-serif;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+h2 {
+  margin-left: 0.2em;
+}
+#add-btn {
+  font-family: "PT Sans", sans-serif;
+  background-color: #330066;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  top: 0.5em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 0.3em;
+  margin-left: 35em;
+  font-size: 1em;
+}
+
+#add-btn:hover {
+  background-color: #330066;
+  color: grey;
+}
+#addEmployeeButton {
+  font-family: "PT Sans", sans-serif;
+  background-color: #330066;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  top: 0.5em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+#addEmployeeButton:hover {
+  background-color: #330066;
+  color: grey;
+}
+#updatebtn {
+  font-family: "PT Sans", sans-serif;
+  background-color: #330066;
+  color: #fff;
+  border: none;
+}
+#updatebtn:hover {
+  background-color: #330066;
+  color: grey;
+}
+#updateEmployeeButton {
+  font-family: "PT Sans", sans-serif;
+  background-color: #330066;
+  color: #fff;
+  border: none;
+}
+#updateEmployeeButton:hover {
+  background-color: #330066;
+  color: grey;
+}

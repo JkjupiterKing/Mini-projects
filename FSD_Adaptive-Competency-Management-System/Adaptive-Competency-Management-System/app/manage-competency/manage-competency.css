@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../resources/fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    padding-top: 1em; /* Adjust based on navbar height */
+    font-family: "PT Sans", sans-serif;
+}
+
+.main-content {
+    margin-left: 270px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+.card-img-top {
+    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 10em;
+    margin-top: 1em;
+    margin-left: 3em;
+} 
+.btn-primary {
+    background-color:#330066;
+    border-color: black;
+}
+.btn-primary:hover {
+    background-color: black;
+    color: grey;
+}
+.card {
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects */
+}
+/* Card body styling */
+.card-body {
+    padding: 16px; /* Add padding inside the card body */
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.25rem; /* Adjust font size for the title */
+    margin-bottom: 0.75rem; /* Margin below the title */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Description styling */
+.card-text {
+    font-size: 1rem; /* Adjust font size for the description */
+    color: #555; /* Slightly darker grey color for the text */
+    margin-bottom: 1rem; /* Margin below the description */
+}
+
+/* Add shadow and scaling effect on hover */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transform: scale(1.02); /* Slightly scale up the card on hover */
+}

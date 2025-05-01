@@ -1,0 +1,66 @@
+INSERT INTO courses (course_name, description, image_url, course_url)
+VALUES
+    ('HTML', 'Learn basics of HTML', '../../resources/Images/html-5.png', '../../resources/course videos/html.mp4'),
+    ('CSS', 'Learn basics of CSS', '../../resources/Images/css-3.png', '../../resources/course videos/css.mp4'),
+    ('JavaScript', 'Learn JavaScript programming language fundamentals', '../../resources/Images/js.png', '../../resources/course videos/javascript.mp4'),
+    ('Java Programming', 'Learn Java programming language basics', '../../resources/Images/java.png', '../../resources/course videos/java.mp4'),
+    ('Software Testing', 'Introduction to software testing principles', '../../resources/Images/test.png', '../../resources/course videos/software testing.mp4');
+
+INSERT INTO employees (EMPLOYEE_ID, ADDRESS, BIRTH_DATE, DEPARTMENT, EMAIL, FIRST_NAME, HIRE_DATE, LAST_NAME, PASSWORD, POSITION)
+VALUES 
+(1, '123 Main St', '1990-01-01', 'IT', 'jhon@jk.com', 'John', '2020-01-01', 'Doe', 'YQ==', 'Admin'),
+(2, '123 Main St', '1990-01-01', 'IT', 'tom@jk.com', 'Tom', '2020-01-01', 'Doe', 'YQ==', 'Employee');
+
+INSERT INTO Questions (question_text, option_1, option_2, option_3, option_4, correct_answer, type_of_question) VALUES
+('What does HTML stand for?', 'HyperLinks and text markup language', 'Home tool markup language', 'HyperText Markup Language', 'HyperText Marking Language', 'HyperText Markup Language', 'HTML'),
+('Which character is used to indicate an end tag?', '^', '*', '/', '<', '/', 'HTML'),
+('Which one is the correct sequence of HTML tags?', 'head, body, title, html', 'html, head, title, body', 'html, title, head, body', 'None of the above', 'html, head, title, body', 'HTML'),
+('Which HTML tag is used to display the text with scrolling effect?', '< scroll >', '< run >', '< marquee >', 'None', '< marquee >', 'HTML'),
+('Which HTML tag is used to highlight background of the text?', '< highlight >', '< mark >', '< light >', 'All of the above', '< mark >', 'HTML'),
+('What is the correct HTML for inserting an image?', '< img src="img.jpg" alt="description" >', '< image src="img.jpg" description="description" >', '< picture src="img.jpg" alt="description" >', '< img src="img.jpg" title="description" >', '< img src="img.jpg" alt="description" >', 'HTML'),
+('Which attribute is used to specify the width of an image in HTML?', 'width', 'height', 'size', 'dimension', 'width', 'HTML'),
+('Which HTML tag is used for creating hyperlinks?', '< link >', '< a >', '< hyperlink >', '< url >', '< a >', 'HTML'),
+('Which tag is used to define the navigation links in HTML?', '< nav >', '< navigation >', '< links >', '< menu >', '< nav >', 'HTML'),
+('Which tag is used to create a form in HTML?', '< form >', '< input >', '< field >', '< form-data >', '< form >', 'HTML'),
+('What does CSS stand for?', 'Cascading style sheet', 'Creative Style sheet', 'Colorful style sheet', 'Clientside style sheet', 'Cascading style sheet', 'CSS'),
+('What is the correct HTML for referring to an external style sheet?', '< link rel="stylesheet" type="text/css" href="myStyle.css" >', '< style src="mystyle.css" >', '< stylesheet > mystyle.css < /stylesheet >', '< stylesheet1 > mystyle.css < /stylesheet1 >', '< link rel="stylesheet" type="text/css" href="myStyle.css" >', 'CSS'),
+('Which CSS property is used to change the text color of an element?', 'color', 'fgcolor', 'text-color', 'font-color', 'color', 'CSS'),
+('How do you display a border like this: The top border = 10 pixels, The bottom border = 5 pixels, The left border = 20 pixels, The right border = 1 pixel?', 'border-width:10px 1px 5px 20px;', 'border-width:10px 5px 20px 1px;', 'border-width:5px 20px 10px 1px;', 'border-width:10px 20px 5px 1px;', 'border-width:10px 5px 20px 1px;', 'CSS'),
+('Which element is used to represent the transparency of an element in CSS?', 'Hover', 'Opacity', 'Transparent', 'Overlay', 'Opacity', 'CSS'),
+('What property is used to change the background color in CSS?', 'background-color', 'bg-color', 'color', 'background', 'background-color', 'CSS'),
+('How can you center text in CSS?', 'text-align: center;', 'align: center;', 'center-text: true;', 'justify-content: center;', 'text-align: center;', 'CSS'),
+('Which property controls the spacing between lines of text in CSS?', 'line-height', 'text-spacing', 'letter-spacing', 'margin', 'line-height', 'CSS'),
+('What is the purpose of the `z-index` property in CSS?', 'Control stacking order of elements', 'Change the size of the element', 'Change the color of the element', 'Add space around elements', 'Control stacking order of elements', 'CSS'),
+('How do you apply a style to a specific HTML element using CSS?', 'Use an ID selector', 'Use a class selector', 'Use a tag selector', 'Use an element selector', 'Use an ID selector', 'CSS'),
+('What will the following code return: Boolean(10 > 9)?', 'True', 'False', 'NaN', 'Not mentioned', 'True', 'JavaScript'),
+('Where is the correct place to insert a JavaScript?', 'Both the <head> section and the <body> section are correct', 'The <body> section', 'The <head> section', 'Not mentioned', 'Both the <head> section and the <body> section are correct', 'JavaScript'),
+('What is the correct syntax for referring to an external script called ''xxx.js''?', '< script src="xxx.js" >', '< script name="xxx.js" >', '< script href="xxx.js" >', 'Overlay', '< script src="xxx.js" >', 'JavaScript'),
+('How do you write ''Hello World'' in an alert box?', 'alert(''Hello World'');', 'msgBox(''Hello World'');', 'alertBox(''Hello World'');', 'msg(''Hello World'');', 'alert(''Hello World'');', 'JavaScript'),
+('How do you create a function in JavaScript?', 'function myFunction()', 'function:myFunction()', 'function = myFunction()', 'Not mentioned', 'function myFunction()', 'JavaScript'),
+('How do you declare a variable in JavaScript?', 'var myVar;', 'let myVar;', 'const myVar;', 'All of the above', 'All of the above', 'JavaScript'),
+('Which operator is used to compare two values for equality in JavaScript?', '==', '===', '!=', '!==', '===', 'JavaScript'),
+('What does `NaN` stand for in JavaScript?', 'Not a Number', 'Number and Nothing', 'Not a Null', 'Nothing and Number', 'Not a Number', 'JavaScript'),
+('How do you create a JavaScript array?', 'var arr = [];', 'var arr = ();', 'var arr = {};', 'var arr = <>;', 'var arr = [];', 'JavaScript'),
+('Which method is used to add an item to the end of an array in JavaScript?', 'push()', 'pop()', 'shift()', 'unshift()', 'push()', 'JavaScript'),
+('Which data type is used to create a variable that should store text?', 'string', 'Txt', 'myString', 'String', 'String', 'Java Programming'),
+('How do you create a variable with the numeric value 5?', 'num x = 5', 'x = 5;', 'int x = 5;', 'float x = 5;', 'int x = 5;', 'Java Programming'),
+('How do you create a method in Java?', 'methodName()', '(methodName)', 'methodName.', 'methodName[]', 'methodName()', 'Java Programming'),
+('Which keyword is used to create a class in Java?', 'class', 'MyClass', 'className', 'class()', 'class', 'Java Programming'),
+('What is the correct way to create an object called myObj of MyClass?', 'class MyClass = new myObj();', 'MyClass myObj = new MyClass();', 'class myObj = new MyClass();', 'new myObj = MyClass();', 'MyClass myObj = new MyClass();', 'Java Programming'),
+('What is the default value of a boolean variable in Java?', 'true', 'false', 'null', '0', 'false', 'Java Programming'),
+('Which method is used to start a thread in Java?', 'start()', 'run()', 'begin()', 'execute()', 'start()', 'Java Programming'),
+('How do you declare a constant in Java?', 'final int x;', 'const int x;', 'static int x;', 'immutable int x;', 'final int x;', 'Java Programming'),
+('What is the superclass of all classes in Java?', 'Object', 'Class', 'Base', 'Super', 'Object', 'Java Programming'),
+('Which keyword is used to inherit a class in Java?', 'extends', 'implements', 'inherits', 'super', 'extends', 'Java Programming'),
+('Testing individual units or modules of an application is called?', 'Unit Testing', 'Integration Testing', 'black-box Testing', 'Not mentioned', 'Unit Testing', 'Software Testing'),
+('_______ is a type of testing performed to ensure that the application being tested is usable by people with disabilities?', 'Disability Testing', 'Accessibility Testing', 'Usability Testing', 'Not mentioned', 'Accessibility Testing', 'Software Testing'),
+('______ is a process of testing the communication between two services based on a set of rules called Contract?', 'Contract Testing', 'Integration Testing', 'Unit Testing', 'Not mentioned', 'Contract Testing', 'Software Testing'),
+('Software testing activities should start', 'as soon as the code is written', 'during the design stage', 'when the requirements have been formally documented', 'as soon as possible in the development life cycle', 'as soon as possible in the development life cycle', 'Software Testing'),
+('What is the primary goal of software testing?', 'To create software requirements', 'To identify defects in the software', 'To design the user interface', 'To write code for the software', 'To identify defects in the software', 'Software Testing'),
+('What is Regression Testing?', 'Testing after changes to ensure existing functionalities are not broken', 'Testing new features', 'Testing the system in isolation', 'Testing the system in a live environment', 'Testing after changes to ensure existing functionalities are not broken', 'Software Testing'),
+('What is the purpose of Test-Driven Development (TDD)?', 'To write tests before writing the actual code', 'To test the application in a live environment', 'To perform integration testing', 'To write code before writing tests', 'To write tests before writing the actual code', 'Software Testing'),
+('What is a test case?', 'A set of conditions to test a specific functionality', 'A report of all defects', 'A document outlining testing strategies', 'A tool for automated testing', 'A set of conditions to test a specific functionality', 'Software Testing'),
+('What does the term "test coverage" refer to?', 'The percentage of code tested by the test cases', 'The amount of time spent testing', 'The number of test cases created', 'The documentation of test results', 'The percentage of code tested by the test cases', 'Software Testing'),
+('What is the difference between verification and validation in software testing?', 'Verification is to ensure the product is built right, while validation is to ensure the right product is built', 'Verification is performed by developers, while validation is performed by testers', 'Verification is for functional testing, while validation is for non-functional testing', 'There is no difference', 'Verification is to ensure the product is built right, while validation is to ensure the right product is built', 'Software Testing');
+
+
