@@ -1,0 +1,85 @@
+.sidenav {
+    height: 100vh;
+    width: 250px;
+    background-color: #343a40; /* Dark background color */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #495057; /* Slightly lighter border */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+    color: #fff; /* White text color */
+}
+
+.sidenav-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sidenav-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-link {
+    color: #adb5bd; /* Light gray text color */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Ensure text decoration is none */
+}
+
+.nav-link .bi {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.nav-link:hover {
+    background-color: #495057; /* Darker background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+.logout-container {
+    margin-top: auto; /* Pushes the logout link to the bottom */
+    text-align: center;
+}
+
+.logout-link {
+    color: #ced4da; /* Light gray text color */
+    font-weight: 500;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Ensure text decoration is none */
+}
+
+.logout-link:hover {
+    background-color: #495057; /* Darker background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+#logout-icon {
+    margin-right: 0.4em;
+    margin-top: 0.1em;
+}
+
+.sidenav-logo {
+    width: 2em; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.sidenav-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}

@@ -1,0 +1,46 @@
+
+.app-container {
+    display: flex;
+}
+
+.main-content {
+    margin-left: 250px; /* Adjust according to the width of your Sidenav */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Style for the search bar and icon */
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Additional styling for search input */
+.search-bar {
+    padding-right: 40px; /* Space for the icon */
+    border-radius: 4px;
+    margin-right: 20px; /* Gap between search bar and button */
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Adjust color if needed */
+    margin-right: 1.2em;
+}
+
+/* Optional: Ensure that buttons and search bar are aligned */
+.search-create-container {
+    display: flex;
+    align-items: center;
+    gap: 36em; /* Space between search bar and button */
+}
+.pagination-container {
+    margin: 20px 0;
+}
+#createproject-btn{
+    margin-left: 3em;
+}

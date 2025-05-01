@@ -1,0 +1,31 @@
+body {
+    background-color: white; 
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+.search-icon {
+    cursor: pointer;
+}
+#createissue-btn {
+    margin-left: auto;
+}
+.pagination-container {
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-item {
+    cursor: pointer;
+}
+
+.pagination-item.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
