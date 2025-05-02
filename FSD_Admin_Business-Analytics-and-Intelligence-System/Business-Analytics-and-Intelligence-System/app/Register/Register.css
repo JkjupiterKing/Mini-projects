@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Mukta";
+  src: url("../../resources/fonts/Mukta-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #f6eec9;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+}
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.home-button:hover {
+  background-color: black;
+  color: grey;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em; /* Space between header and form */
+}
+
+.header h1 {
+  margin-right: 0.3em; /* Space between text and logo */
+  margin-left: 1.4em;
+  color: #006769;
+  font-family: "Mukta", sans-serif; /* Ensure consistent font */
+}
+
+.header .logo {
+  width: 11em;
+  height: auto;
+  margin-bottom: 1em; /* Space below logo */
+}
+
+.register-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 5em rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10em;
+  font-family: "Mukta", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.btn-register {
+  width: 30%;
+  margin-left: 10em;
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: "Mukta", sans-serif;
+  color: #006769; /* Header color */
+  margin-bottom: 1em; /* Space below the title */
+}
+
+.login-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.login-link:hover {
+  text-decoration: none;
+}

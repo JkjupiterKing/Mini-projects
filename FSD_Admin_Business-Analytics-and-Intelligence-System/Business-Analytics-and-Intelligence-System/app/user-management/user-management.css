@@ -1,0 +1,66 @@
+main {
+  margin-left: 295px;
+  margin-top: 1.5em;
+  margin-right: 1.2em;
+}
+#DisplayUsersList {
+  width: 100%;
+  margin: 0 auto;
+}
+#searchInput {
+  width: 200px;
+  margin: 0 auto;
+}
+#submit {
+  background-color: grey;
+  border-color: grey;
+}
+
+#ManageUsersTableData .btn-update {
+  background-color: grey;
+  border-color: grey;
+  color: #fff; /* Text color */
+}
+
+#ManageUsersTableData .btn-delete {
+  background-color: #dc3545;
+  color: #fff; /* Text color */
+}
+#ManageUsersTableData .btn-update:hover {
+  color: black;
+}
+#ManageUsersTableData .btn-delete:hover {
+  color: black;
+}
+#updateuser {
+  background-color: grey;
+  border-color: grey;
+  color: #fff;
+}
+.pagination {
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 5em;
+}
+
+.pagination li {
+  display: inline-block; /* Displays pagination items horizontally */
+  font-size: 1.2em; /* Adjusts the font size */
+}
+.pagination a {
+  color: black; /* Sets the text color */
+  text-decoration: none;
+  padding: 8px 12px; /* Adds padding inside the pagination items */
+  border: 1px solid #071952; /* Adds a border around pagination items */
+  border-radius: 1px; /* Rounds the corners */
+}
+
+.pagination a:hover {
+  background-color: grey; /* Changes background color on hover */
+  color: white; /* Changes text color on hover */
+}
+.pagination .active a {
+  background-color: grey; /* Changes background color for active item */
+  border-color: grey;
+  color: white; /* Changes text color for active item */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Linking Google font link for icons -->
+  <link rel="stylesheet" href="../../resources/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/Dashboard/Dashboard.css">
+  <link rel="icon" href="../../resources/Images/logo.gif" type="image/x-icon">
+  <script src="../../resources/chart.js/dist/chart.umd.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidenav" id="mySidenav">
+    <!-- Sidebar content here -->
+  </div>
+  <main>
+    <h1>Business Analytics</h1>
+    <div class="dash-content">
+      <div class="overview">
+          <div class="boxes">
+              <div class="box box1">
+                  <span class="text">Upcoming Projects</span>
+                  <span class="number">0</span>
+              </div>
+              <div class="box box2">
+                  <span class="text">Ongoing Projects</span>
+                  <span class="number">0</span>
+              </div>
+              <div class="box box3">
+                  <span class="text">Completed Projects</span>
+                  <span class="number">0</span>
+              </div>
+          </div>
+      </div>
+      <br>
+      <div id="chartsContainer">
+        <div class="chart-container">
+            <h2>Project Status</h2>
+            <canvas id="projectStatusChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Project Status</h2>
+            <canvas id="statusPieChart"></canvas>
+        </div>
+    </div>
+    <br>
+  </main>
+  <script src="../../resources/jquery/jquery-3.7.1.min.js"></script>
+  <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../app/Dashboard/Dashboard.js"></script>
+</body>
+</html>

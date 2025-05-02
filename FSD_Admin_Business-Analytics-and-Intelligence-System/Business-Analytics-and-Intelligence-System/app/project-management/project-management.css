@@ -1,0 +1,81 @@
+main {
+  margin-left: 295px;
+  margin-top: 1.5em;
+  margin-right: 1.2em;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+#searchInput {
+  width: 200px;
+}
+#updateProject {
+  background-color: grey;
+  border-color: grey;
+}
+#submitProject {
+  background-color: grey;
+  border-color: grey;
+}
+#submitProject:hover {
+  color: black;
+}
+#projectDescription {
+  margin-left: 1em;
+}
+#DisplayProjectsList th {
+  width: 21%;
+}
+
+#ManageProjectsTableData .btn-update {
+  background-color: grey;
+  border-color: grey;
+  color: #fff;
+}
+
+#ManageProjectsTableData .btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+#ManageProjectsTableData .btn-update:hover {
+  color: black;
+}
+#ManageProjectsTableData .btn-delete:hover {
+  color: black;
+}
+.pagination {
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 5em;
+}
+
+.pagination li {
+  display: inline-block;
+  font-size: 1.2em;
+}
+.pagination a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #071952;
+  border-radius: 1px;
+}
+
+.pagination a:hover {
+  background-color: grey;
+  color: white;
+}
+.pagination .active a {
+  background-color: grey;
+  border-color: grey;
+  color: white;
+}
+#download-btn {
+  left: 920%;
+}
+#projectDescription {
+  margin: 0;
+}
