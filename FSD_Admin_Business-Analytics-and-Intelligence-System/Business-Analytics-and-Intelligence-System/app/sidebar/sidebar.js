@@ -1,5 +1,5 @@
 // Handle logout link click
-const logoutLink = document.querySelector(".logout-link a");
+const logoutLink = document.getElementById("logout-link");
 if (logoutLink) {
   logoutLink.addEventListener("click", function (event) {
     event.preventDefault();

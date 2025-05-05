@@ -91,10 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         username: formData.get("updateusername"),
         email: formData.get("updateEmail"),
         phone: formData.get("updatePhone"),
-        role: updatedRoleObject,
         address: formData.get("updateAddress"),
-        salary: formData.get("updateSalary"),
-        manager: formData.get("updatemanager"),
       };
       updateUser(userData);
     });
@@ -232,16 +229,7 @@ function displayUsers(users) {
       user.phone +
       "</td>" +
       "<td>" +
-      user.role.roleName +
-      "</td>" +
-      "<td>" +
       user.address +
-      "</td>" +
-      "<td>" +
-      user.salary +
-      "</td>" +
-      "<td>" +
-      user.manager +
       "</td>" +
       "<td>" +
       '<button type="button" class="btn btn-primary btn-sm btn-update" data-user-id="' +
@@ -391,22 +379,6 @@ function openUpdateForm(userId) {
   document.getElementById("updateEmail").value = user.email;
   document.getElementById("updatePhone").value = user.phone;
   document.getElementById("updateAddress").value = user.address;
-  document.getElementById("updateSalary").value = user.salary;
-  document.getElementById("updatemanager").value = user.manager;
-
-  // Populate role dropdown and set the current role as selected
-  var selectDropdown = document.getElementById("updaterole");
-  selectDropdown.innerHTML = "";
-
-  allRoles.forEach(function (role) {
-    var option = document.createElement("option");
-    option.value = role.roleId;
-    option.textContent = role.roleName;
-    selectDropdown.appendChild(option);
-  });
-
-  // Set the selected role
-  selectDropdown.value = user.role.roleId;
 
   var updateModal = new bootstrap.Modal(
     document.getElementById("UpdateUserModal")
